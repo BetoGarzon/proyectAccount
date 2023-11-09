@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operaciones Bancarias</title>
+</head>
+<body>
+<h1>Operaciones Bancarias</h1>
+
+<form action="http://localhost:8080/account/create" method="POST">
+    <label for="owner">Propietario:</label>
+    <input type="text" id="owner" name="owner" required><br><br>
+
+    <label for="initialBalance">Saldo Inicial:</label>
+    <input type="text" id="initialBalance" name="initialBalance" required><br><br>
+
+    <input type="submit" value="Crear Cuenta">
+</form>
+
+<form action="http://localhost:8080/account/deposit" method="POST">
+    <label for="accountNumberDeposit">Número de Cuenta:</label>
+    <input type="text" id="accountNumberDeposit" name="accountNumberDeposit" required><br><br>
+
+    <label for="depositAmount">Cantidad para Depósito:</label>
+    <input type="text" id="depositAmount" name="depositAmount" required><br><br>
+
+    <input type="submit" value="Realizar Depósito">
+</form>
+
+<form action="http://localhost:8080/account/withdraw" method="POST">
+    <label for="accountNumberWithdraw">Número de Cuenta:</label>
+    <input type="text" id="accountNumberWithdraw" name="accountNumberWithdraw" required><br><br>
+
+    <label for="withdrawalAmount">Cantidad para Retiro:</label>
+    <input type="text" id="withdrawalAmount" name="withdrawalAmount" required><br><br>
+
+    <input type="submit" value="Realizar Retiro">
+</form>
+
+<form action="http://localhost:8080/account/balance" method="POST">
+    <label for="accountNumberBalance">Número de Cuenta:</label>
+    <input type="text" id="accountNumberBalance" name="accountNumberBalance" required><br><br>
+
+    <label for="balanceAmount">Nuevo Saldo:</label>
+    <input type="text" id="balanceAmount" name="balanceAmount" required><br><br>
+
+    <input type="submit" value="Actualizar Saldo">
+</form>
+</body>
+</html>
